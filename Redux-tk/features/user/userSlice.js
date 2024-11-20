@@ -10,8 +10,8 @@ const initialState = {
 
 export const fetchUsers = createAsyncThunk("user/fetchUsers", () => {
   return axios
-    .get("https://jsonplaceholder.typicode.com22222/users")
-    .then((res) => res.data.map((user) => user.id));
+    .get("https://jsonplaceholder.typicode.comp/users")
+    .then((res) => res.data);
 });
 
 const userSlice = createSlice({
